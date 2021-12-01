@@ -2,6 +2,8 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:custom_view/custom_font_size.dart';
 import 'package:flutter/material.dart';
 
+import '../custom_view.dart';
+
 extension Texts on String {
   Widget iconWithLabel(
     BuildContext context, {
@@ -34,6 +36,35 @@ extension Texts on String {
             fontWeight: fontWeight),
       );
 
+  Widget linkTapWithLabel(
+          BuildContext context, String label, Function(String url) onTap,
+          {double fontSize = CustomFontSize.f20,
+          TextAlign? textAlign,
+          int? maxLines,
+          Color? color,
+          TextDecoration? decoration,
+          double? letterSpacing,
+          FontWeight? fontWeight}) =>
+      InkWell(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            label.description(context),
+            SpacerBox.v4,
+            this.link(context,
+                fontSize: fontSize,
+                textAlign: textAlign,
+                maxLines: maxLines,
+                color: color,
+                decoration: decoration,
+                letterSpacing: letterSpacing,
+                fontWeight: fontWeight),
+          ],
+        ),
+        onTap: () {
+          onTap(this);
+        },
+      );
 
   Widget link(BuildContext context,
           {double fontSize = CustomFontSize.f20,
