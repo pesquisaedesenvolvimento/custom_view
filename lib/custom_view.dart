@@ -28,3 +28,4 @@ export 'custom_view.dart';
 export 'shimmer_loading.dart';
 export 'size_config.dart';
 export 'spacer_box.dart';
+export './theme.dart';
