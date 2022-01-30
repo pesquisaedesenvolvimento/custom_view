@@ -29,3 +29,6 @@ export 'shimmer_loading.dart';
 export 'size_config.dart';
 export 'spacer_box.dart';
 export './theme.dart';
+
+//Packages
+export 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
