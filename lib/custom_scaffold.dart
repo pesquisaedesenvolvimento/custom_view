@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomScaffold extends StatelessWidget {
   final Widget child;
-  final AppBar appBar;
+  final AppBar? appBar;
   final Widget? bottomNavigationBar;
   final Widget? floatingActionButton;
   final FloatingActionButtonLocation? floatingActionButtonLocation;
@@ -12,8 +12,8 @@ class CustomScaffold extends StatelessWidget {
   CustomScaffold({
     Key? key,
     required this.child,
-    required this.appBar,
     required this.bottomNavigationBar,
+    this.appBar,
     this.backgroundColor,
     this.floatingActionButton,
     this.floatingActionButtonLocation,

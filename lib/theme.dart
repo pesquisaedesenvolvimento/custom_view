@@ -20,6 +20,9 @@ ThemeData getTheme(BuildContext context, String fontFamily) {
       color: AppColors.attentionColor,
     ),
     hintColor: AppColors.hintColor,
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: AppColors.primary,
+    ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
         unselectedItemColor: AppColors.menuIconsColor,
         selectedItemColor: AppColors.secundary,
