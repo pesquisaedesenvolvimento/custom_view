@@ -14,9 +14,11 @@ class CustomModalFit extends StatelessWidget {
     return Material(
       child: SafeArea(
         top: false,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: items,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: items,
+          ),
         ),
       ),
     );
