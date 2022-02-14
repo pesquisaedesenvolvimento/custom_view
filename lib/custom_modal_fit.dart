@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'custom_item_modal_fit.dart';
 
 class CustomModalFit extends StatelessWidget {
-  final List<CustomItemModalFit> items;
+  final List<Widget> items;
 
   const CustomModalFit({
     Key? key,
