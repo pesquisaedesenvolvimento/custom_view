@@ -12,7 +12,7 @@ class CustomScaffold extends StatelessWidget {
   CustomScaffold({
     Key? key,
     required this.child,
-    required this.bottomNavigationBar,
+    this.bottomNavigationBar,
     this.appBar,
     this.backgroundColor,
     this.floatingActionButton,
