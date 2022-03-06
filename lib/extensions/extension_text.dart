@@ -113,10 +113,12 @@ extension Texts on String {
     int? maxLines,
     double? letterSpacing,
     FontWeight? fontWeight,
+    TextAlign? textAlign,
   }) {
     return AutoSizeText(
       this,
       maxLines: maxLines,
+      textAlign: textAlign,
       style: Theme.of(context).textTheme.headline5!.copyWith(
             fontSize: fontSize,
             color: color,
